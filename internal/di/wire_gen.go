@@ -8,10 +8,10 @@ package di
 
 import (
 	gorm2 "gorm.io/gorm"
-	"noneland/backend/interview/configs"
-	"noneland/backend/interview/internal/db"
-	"noneland/backend/interview/internal/entity"
-	"noneland/backend/interview/internal/repo/gorm"
+	"nonelandBackendInterview/configs"
+	"nonelandBackendInterview/internal/db"
+	"nonelandBackendInterview/internal/entity"
+	"nonelandBackendInterview/internal/repo/gorm"
 	"sync"
 )
 

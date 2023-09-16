@@ -4,13 +4,14 @@
 package di
 
 import (
+	"nonelandBackendInterview/configs"
+	"nonelandBackendInterview/internal/db"
+	"nonelandBackendInterview/internal/entity"
+	repo "nonelandBackendInterview/internal/repo/gorm"
+	"sync"
+
 	"github.com/google/wire"
 	"gorm.io/gorm"
-	"noneland/backend/interview/configs"
-	"noneland/backend/interview/internal/db"
-	"noneland/backend/interview/internal/entity"
-	repo "noneland/backend/interview/internal/repo/gorm"
-	"sync"
 )
 
 var cg *configs.Config

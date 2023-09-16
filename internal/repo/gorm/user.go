@@ -1,8 +1,8 @@
 package gorm
 
 import (
-	"noneland/backend/interview/internal/entity"
-	"noneland/backend/interview/internal/repo/model"
+	"nonelandBackendInterview/internal/entity"
+	"nonelandBackendInterview/internal/repo/model"
 )
 
 func (repo *repository) GetUsers() (users []entity.User, err error) {

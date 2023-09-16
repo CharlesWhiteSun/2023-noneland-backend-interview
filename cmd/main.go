@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"noneland/backend/interview/internal/di"
-	"noneland/backend/interview/internal/pkg"
+	"nonelandBackendInterview/internal/di"
+	"nonelandBackendInterview/internal/pkg"
 
 	"time"
 )

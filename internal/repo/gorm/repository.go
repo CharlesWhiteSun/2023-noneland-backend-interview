@@ -1,9 +1,10 @@
 package gorm
 
 import (
+	"nonelandBackendInterview/configs"
+	"nonelandBackendInterview/internal/entity"
+
 	"gorm.io/gorm"
-	"noneland/backend/interview/configs"
-	"noneland/backend/interview/internal/entity"
 )
 
 type repository struct {

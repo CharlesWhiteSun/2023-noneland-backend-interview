@@ -1,6 +1,6 @@
 package model
 
-import "noneland/backend/interview/internal/entity"
+import "nonelandBackendInterview/internal/entity"
 
 type User struct {
 	Name string `gorm:"type:varchar(255)"`

@@ -21,3 +21,7 @@
 go.workgit
 
 .idea
+
+# test debug
+cmd/configs
+.vscode
