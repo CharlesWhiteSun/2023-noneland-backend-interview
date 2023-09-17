@@ -23,5 +23,17 @@ func setupGin() http.Handler {
 	// TODO: api router
 	apiGroup.GET("hello", api.HelloHandler)
 
+	// binance
+	binanceGroup := apiGroup.Group("/binance")
+	{
+		// spot
+		binanceGroup.GET("/spot/exchangeInfo", api.MiddlewareValidateHeaderToken, api.BinanceSpotExchangeInfoHandler)
+		binanceGroup.GET("/spot/balance", api.MiddlewareValidateHeaderToken, api.BinanceSpotBalanceHandler)
+		binanceGroup.GET("/spot/transfer/records", api.MiddlewareValidateHeaderToken, api.BinanceSpotRecordsHandler)
+		// futures
+		binanceGroup.GET("/futures/exchangeInfo", api.MiddlewareValidateHeaderToken, api.BinanceFuturesExchangeInfoHandler)
+		binanceGroup.GET("/futures/balance", api.MiddlewareValidateHeaderToken, api.BinanceFuturesBalanceHandler)
+	}
+
 	return r
 }
