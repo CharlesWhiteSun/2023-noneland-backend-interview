@@ -9,6 +9,9 @@ import (
 )
 
 func TestLimiter_Per_Second(t *testing.T) {
+	if testing.Short() {
+		t.Skip("do not need run on short ver.")
+	}
 	rl := ratelimit.New(2) // per second
 	prev := time.Now()
 	for i := 0; i < 10; i++ {
