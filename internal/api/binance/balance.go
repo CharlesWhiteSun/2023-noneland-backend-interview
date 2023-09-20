@@ -114,7 +114,7 @@ type SpotBalanceResponse struct {
 
 // GetSpotBalance 透過第三方 API 取得現貨帳戶餘額
 func GetSpotBalance(param Balance) ([]byte, error) {
-	urlStr := binanceFuturesBaseURL + param.Path
+	urlStr := binanceSpotBaseURL + param.Path
 	params := map[string]interface{}{
 		"timestamp":  param.Timestamp,
 		"recvWindow": param.RecvWindows,

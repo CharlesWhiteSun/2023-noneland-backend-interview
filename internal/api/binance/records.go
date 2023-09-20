@@ -198,7 +198,7 @@ type SpotRecordRow struct {
 
 // GetSpotBalance 透過第三方 API 取得現貨帳戶轉入轉出紀錄
 func GetSpotRecords(param Records) ([]byte, error) {
-	urlStr := binanceFuturesBaseURL + param.Path
+	urlStr := binanceSpotBaseURL + param.Path
 	params := map[string]interface{}{
 		"timestamp":  param.Timestamp,
 		"recvWindow": param.RecvWindows,

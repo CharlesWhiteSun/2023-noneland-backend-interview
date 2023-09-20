@@ -138,7 +138,7 @@ type SpotRateLimit struct {
 
 // GetSpotExchangeInfo 透過第三方 API 取得現貨交易規範
 func GetSpotExchangeInfo(param ExchangeInfo) ([]byte, error) {
-	urlStr := binanceFuturesBaseURL + param.Path
+	urlStr := binanceSpotBaseURL + param.Path
 	params := map[string]interface{}{
 		"timestamp":  param.Timestamp,
 		"recvWindow": param.RecvWindows,

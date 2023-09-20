@@ -7,15 +7,13 @@ require (
 	github.com/google/wire v0.5.0
 	github.com/spf13/viper v1.16.0
 	github.com/stretchr/testify v1.8.4
+	go.uber.org/ratelimit v0.3.0
 	golang.org/x/net v0.15.0
 	gorm.io/driver/sqlite v1.5.3
 	gorm.io/gorm v1.25.4
 )
 
-require (
-	github.com/benbjohnson/clock v1.3.0 // indirect
-	go.uber.org/ratelimit v0.3.0 // indirect
-)
+require github.com/benbjohnson/clock v1.3.0 // indirect
 
 require (
 	github.com/bytedance/sonic v1.10.1 // indirect
@@ -55,7 +53,6 @@ require (
 	golang.org/x/crypto v0.13.0 // indirect
 	golang.org/x/sys v0.12.0 // indirect
 	golang.org/x/text v0.13.0 // indirect
-	golang.org/x/time v0.3.0
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
